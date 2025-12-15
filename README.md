@@ -13,18 +13,52 @@ By integrating Financial, Operational, and Planning metrics into a unified view,
 ---
 
 ## 🏗️ Project Architecture
-* **Platform:** Power BI Desktop
+* **Platform:** Power BI Desktop , MS SQL Server
 * **Data Source:** Smart Logistics Dataset (CSV)
-* **Key Visuals:** Grid-layout Dashboard with 3-Pillar Strategy (Finance, Operations, Planning).
-* **Interactivity:** Dynamic slicers for "Date Range" and "Traffic Status".
+* **Key Visuals:** Grid-layout Dashboard.
 
-### 📊 The 3-Pillar Strategy
-1.  **Financial Health (CEO View):** Focuses on Revenue at Risk and SLA Penalty impacts.
-2.  **Fleet Operations (Manager View):** Monitors On-Time Delivery (OTD), Utilization, and Asset Reliability.
-3.  **Demand Planning (Analyst View):** Analyzes Inventory Gaps, Stockouts, and Delay Drivers.
+
+###  **3-Pillar Analytics Framework**
+The dashboard is structured into three core analytical domains:
+
+1. **Financial Health**
+   - Revenue at risk due to delays
+   - SLA penalty costs
+2. **Fleet & Operations**
+   - On-time delivery performance
+   - Delay reasons & mechanical failure tracking
+   - Fleet utilization insights
+3. **Demand Planning**
+   - Inventory vs. forecast gap analysis
+   - Stockout and under-stock risks
 
 ---
+## 📊 Key Features
 
-## 🧮 DAX Measure Library
-DAX-Measures.md is the documentation of the custom DAX formulas used to drive the insights.
+### 🔹 Cross-Functional Insights
+- Combines finance, operations, and planning metrics
+- Enables multi-angle view of logistics performance
+
+### 🔹 Dynamic Interactivity
+- Delay reasons filters
+- Customer segment segmentation
+
+### 🔹 Advanced DAX Logic
+The report uses extensive DAX measures for accurate KPI calculation, including:
+- On-Time Shipment rates
+- Revenue at Risk
+- SLA Penalty computation
+- Gold customer shipment analysis
+
+📄 See **DAX-Measures.md** for detailed formulas and business definitions.
+
+---
+## 📈 Business Value
+
+This analytical solution enables logistics and supply chain teams to:
+
+- Identify delay drivers and high-risk delivery windows
+- Quantify financial impact of logistics delays
+- Improve planning decisions using real-time metrics
+- Enhance customer satisfaction through actionable insights
 
