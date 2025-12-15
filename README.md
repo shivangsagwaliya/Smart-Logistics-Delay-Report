@@ -1,6 +1,6 @@
 # 🚛 Smart Logistics Delay Report
 
-![Dashboard Screenshot](Assets/dashboard_screenshot.png)
+![Dashboard Screenshot](Logistics.PNG)
 
 ## 📌 Executive Summary
 The **Smart Logistics Delay Report** is a specialized Power BI analytic solution designed to diagnose and mitigate supply chain disruptions.
