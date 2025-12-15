@@ -26,20 +26,5 @@ By integrating Financial, Operational, and Planning metrics into a unified view,
 ---
 
 ## 🧮 DAX Measure Library
-Below is the documentation of the custom DAX formulas used to drive the insights.
+DAX-Measures.md is the documentation of the custom DAX formulas used to drive the insights.
 
-### 1. Key Performance Indicators (KPIs)
-Calculations for high-level dashboard cards.
-
-```dax
-/* Calculates the total value of transactions currently flagged as delayed */
-Revenue_At_Risk = 
-SUMX(smart_logistics_dataset, IF([Logistics_Delay]=1, [User_Transaction_Amount], 0))
-
-/* Total penalty cost incurred due to waiting times exceeding 30 minutes */
-Penalty_Cost = 
-SUM(smart_logistics_dataset[SLA_Penalty])
-
-/* Percentage of shipments delivered without delay */
-On_Time_Shipments% = 
-DIVIDE([On_Time_Shipments], [Total_Shipments])
