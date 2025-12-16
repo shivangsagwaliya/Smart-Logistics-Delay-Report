@@ -1,10 +1,7 @@
 /*
 =============================================================================
-Project: Smart Logistics Control Tower
-Description: Data Validation & Quality Assurance Queries
-Platform: SQL Server / T-SQL
-Author: [Your Name]
-=============================================================================
+Project: Smart Logistics Delay Report
+========================================================
 */
 
 -----------------------------------------------------------------------------
@@ -105,4 +102,5 @@ SELECT Logistics_Delay_Reason, COUNT(*) AS Frequency
 FROM smart_logistics
 WHERE Logistics_Delay = 1 
 GROUP BY Logistics_Delay_Reason 
+
 ORDER BY Frequency DESC;
